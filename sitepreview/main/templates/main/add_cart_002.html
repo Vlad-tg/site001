@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+
+{% if product.status != actives %}
+{% for item in actives %}
+<div class="product-views">
+    <div class="content">
+        <img style="height: 200px; width: 200px;" src="{{ item.image.url }}">
+        <p style="color: blue;">{{ item.title }}</p>
+
+    </div>
+</div>
+{% endfor %}
+{% endif %}
+
+
+{% for item in inactive %}
+<div class="product-views">
+    <div class="content">
+        <img style="height: 200px; width: 200px;" src="{{ item.image.url }}">
+        <p style="color: red;">{{ item.title }}</p>
+        <p style="color: red;">{{ item.status }}</p>
+        {% if item.price_adult > 900 %}
+        <p style="color: red;">{{ item.price_adult }}$</p>
+        {% else %}
+        <p style="color: blue;">{{ item.price_adult }}$</p>
+        {% endif %}
+        {% if item.price_children > 1000 %}
+        <p style="color: red;">{{ item.price_children }}$</p>
+        {% else %}
+        <p style="color: blue;">{{ item.price_children }}$</p>
+        {% endif %}
+        <a href="{% url 'add_to_cart' slug=item.slug %}">
+            <button class="add-to-cart">+</button>
+        </a>
+    </div>
+</div>
+{% endfor %}
+
+
+{% for item in actives %}
+<div class="product-views">
+    <div class="content">
+        <img style="height: 200px; width: 200px;" src="{{ item.image.url }}">
+        <p style="color: red;">{{ item.title }}</p>
+        <p style="color: red;">{{ item.status }}</p>
+
+        <form action="{% url 'add_to_cart' slug=item.slug %}" method="GET">
+            {% csrf_token %}
+            <input type="number" class="from-control" name="qty_adult" style="width: 70px" min="1"
+                   value="{{ item.qty_adult }}">
+            <br>
+            <input type="number" class="from-control" name="qty_children" style="width: 70px" min="1"
+                   value="{{ item.qty_children }}">
+            <br>
+
+
+            <input type="submit" class="btn btn-primary" value="Change quantity">
+        </form>
+
+
+    </div>
+</div>
+{% endfor %}
+
+
+
+
+</body>
+</html>

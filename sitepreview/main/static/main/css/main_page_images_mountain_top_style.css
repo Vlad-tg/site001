@@ -1,0 +1,14 @@
+
+
+.video-v-one {
+  -o-object-fit: cover;
+      object-fit: cover;
+      width: 100%;
+position: relative;
+      top: 0;
+      left: 0;
+      z-index: -2;
+filter: brightness(0.8);
+
+}
+

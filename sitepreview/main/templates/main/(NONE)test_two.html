@@ -1,0 +1,50 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+{% for i in films %}
+<div>
+    <p class="id">{{ i.id }}</p>
+    <p class="title">{{ i.title }}</p>
+</div>
+{% endfor %}
+<hr>
+{% for t in mail %}
+<div>
+    <p class="title">{{ t.title }}</p>
+    <p>{{ t.title__count }}</p>
+    <p>{{ t.products__count }}</p>
+</div>
+{% endfor %}
+<hr>
+{% for a in aris %}
+<div>
+    <p class="title">{{ a.title }}</p>
+    <p class="title">{{ a.pub_date|date:"M d, Y" }}</p>
+</div>
+{% endfor %}
+<hr>
+{% for a in reds %}
+<div>
+    <p class="title">{{ a.title }}</p>
+    <p class="title">{{ a.name }}</p>
+
+</div>
+{% endfor %}
+<hr>
+{% for b in lefts %}
+<div>
+    <p id="">{{ b.title }}</p>
+
+
+</div>
+{% endfor %}
+
+</body>
+</html>

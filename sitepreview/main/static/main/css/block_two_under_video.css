@@ -1,0 +1,73 @@
+#block-two {
+ position: relative;
+ height: 1300px;
+ width: 100%;
+ background-color: #fff;
+ z-index: -2;
+ opacity: 0;
+}
+.jap-img {
+position: absolute;
+height: 300px;
+width: 600px;
+
+top: 100px;
+z-index: 2;
+right: 60px;
+}
+.fade {
+animation-name: fade;
+animation-duration: 3.5s;
+ }
+@keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+.nav-one-img {
+position: absolute;
+height: 500px;
+width: 500px;
+top: 700px;
+left: 60px;
+}
+.nav-img {
+position: absolute;
+height: 300px;
+width: 600px;
+right: 60px;
+top: 450px;
+}
+.text-content-block-two {
+height: 500px;
+width: 600px;
+
+position: absolute;
+left: 60px;
+top: 150px;
+}
+.block-two-text-p {
+text-indent: 5%;
+font-size: 150%;
+font-family: 'Verdana, sans-serif';
+}
+.block-two-text-h3 {
+font-size: 250%;
+font-family: 'Verdana, sans-serif';
+text-align: center;
+color: #414F12;
+}
+.content-block-two-text-two {
+position: absolute;
+height: 310px;
+width: 700px;
+bottom: 150px;
+right: 60px;
+}
+.block-two-text-h3-two {
+font-size: 250%;
+font-family: 'Verdana, sans-serif';
+text-align: center;
+color: #414F12;
+}
+

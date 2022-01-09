@@ -1,0 +1,107 @@
+.block-three {
+
+opacity: 0;
+background-color: #fff;
+height: 1200px;
+width: 100%;
+z-index: -3;
+}
+
+.text-content-block-three {
+position: relative;
+height: 300px;
+width: 1000px;
+left: 100px;
+top: 100px;
+
+}
+
+#carousel {
+  position: relative;
+  width: 1200px;
+  left: 200px;
+  top: 200px;
+
+}
+
+.carousel img {
+  width: 400px;
+  height: 500px;
+  display: block;
+  z-index: -2;
+}
+
+.arrow {
+  position: absolute;
+  top: 550px;
+  padding: 0;
+  background: transition;
+  border-radius: 50%;
+  border: 2.5px solid #414F12;
+  height: 50px;
+  width: 50px;
+  line-height: 24px;
+  display: block;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.arrow:focus {
+  outline: none;
+}
+
+.arrow:hover {
+ transform: scale(0.9, 0.9);
+  cursor: pointer;
+}
+
+.prev {
+  left: 7px;
+
+}
+
+.next {
+  left: 70px;
+
+}
+
+.gallery {
+  width: 1200px;
+  overflow: hidden;
+}
+
+.gallery ul {
+  height: 500px;
+  width: 2800px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  font-size: 0;
+}
+
+.gallery li {
+  display: inline-block;
+}
+
+.li-img-block img {
+ position: relative;
+    z-index: -2;
+}
+
+.li-img-block {
+width: 400px;
+height: 500px;
+filter: sepia(40%);
+
+}
+
+.li-two-text-h2 {
+position: relative;
+color: #000;
+top: -400px;
+font-size: 35pt;
+text-align: center;
+font-family: 'Impact', fantasy;
+}
+

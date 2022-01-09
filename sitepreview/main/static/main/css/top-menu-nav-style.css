@@ -1,0 +1,131 @@
+.line-nav-top-views-registration {
+position: fixed;
+height: 70px;
+width: 100%;
+z-index: 3;
+background-color: transparent;
+
+}
+.line-nav-black {
+position: absolute;
+height: 60px;
+width: 100%;
+z-index: -1;
+background-color: black;
+filter: blur(30px);
+
+}
+.authenticated_not_if_all {
+position: absolute;
+right: 80px;
+top: 20px;
+float: left;
+}
+.authenticated_not_if {
+border: none;
+background-color: transparent;
+
+}
+.authenticated_not_if:focus {
+outline: none;
+}
+.span-login-views {
+position: absolute;
+right: -45px;
+top: 5px;
+font-weight: 400;
+color: white;
+cursor: pointer;
+font-family: 'Verdana, sans-serif';
+}
+.span-login-views:hover {
+text-decoration: underline;
+}
+
+.all-user-line-views {
+position: absolute;
+right: 20px;
+top: 15px;
+}
+.all-user-line-views:hover {
+text-decoration: none;
+}
+.a-logout-views {
+position: relative;
+font-weight: 400;
+font-family: 'Verdana, sans-serif';
+color: #fff;
+text-decoration: none;
+top: 3px;
+}
+.a-logout-views:hover {
+text-decoration: underline;
+color: #fff;
+}
+
+.top-div-all-a-contact {
+position: absolute;
+right: 145px;
+color: white;
+cursor: pointer;
+font-weight: 400;
+top: 25px;
+text-decoration: none;
+font-family: 'Verdana, sans-serif';
+}
+.top-div-all-a-about {
+position: absolute;
+right: 260px;
+color: white;
+cursor: pointer;
+font-weight: 400;
+top: 25px;
+text-decoration: none;
+font-family: 'Verdana, sans-serif';
+}
+.top-div-all-a-hot {
+position: absolute;
+right: 360px;
+color: yellow;
+cursor: pointer;
+font-weight: 400;
+top: 25px;
+text-shadow: 0 0 10px yellow;
+text-decoration: none;
+font-family: 'Verdana, sans-serif';
+}
+.top-div-all-a-hot:hover {
+text-decoration: underline;
+color: yellow;
+}
+.top-div-all-a-contact:hover, .top-div-all-a-about:hover {
+text-decoration: underline;
+color: white;
+}
+.top-button-menu {
+position: absolute;
+background-color: transparent;
+border: none;
+top: 20px;
+left: 20px;
+
+}
+
+#menu-svg {
+height: 30px;
+width: 30px;
+}
+#login-svg {
+height: 30px;
+width: 30px;
+}
+#Layer_1 {
+text-decoration: none;
+
+}
+#Layer_1:hover {
+text-decoration: none;
+}
+
+
+

@@ -1,0 +1,493 @@
+{% load static %}
+{% if request.user.is_authenticated %}
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="{% static '/main/css/main_page_images_mountain_top_style.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '/main/css/top-menu-nav-style.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '/main/css/center-on-video-style.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '/main/css/block_one_under_video.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '/main/css/block_two_under_video.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '/main/css/block_three_under_video.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '/main/css/footer.css' %}" type="text/css">
+    <style>
+body + div {
+  display: none !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+
+    </style>
+
+</head>
+<body>
+<nav class="line-nav-top-views-registration" id="line-nav-top-views-registration-id">
+
+    <div id="content-line-top">
+        <div>
+            <button class="top-button-menu">
+                <svg id="menu-svg" fill="white" height="384pt" viewBox="0 -53 384 384" width="384pt"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
+                    <path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
+                    <path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
+                </svg>
+            </button>
+        </div>
+        <div class="top-div-all-a">
+            <div>
+                <a class="top-div-all-a-hot" id="top-div-all-a-hot">HOT!!!</a>
+            </div>
+            <div>
+                <a class="top-div-all-a-about" id="top-div-all-a-about">ABOUT US</a>
+            </div>
+            <div>
+                <a class="top-div-all-a-contact" id="top-div-all-a-contact">CONTACT US</a>
+            </div>
+        </div>
+        <div>
+
+    <div class="all-user-line-views" id="all-user-line-views-id">
+        <a href="">
+            <?xml version="1.0" encoding="utf-8"?>
+            <svg fill="#fff" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                 x="0px" y="0px"
+                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <g>
+	                       <path d="M256,31C131.7,31,31,131.7,31,256s100.7,225,225,225s225-100.7,225-225S380.3,31,256,31z M256,118.1
+		                           c44.1,0,79.8,35.7,79.8,79.8s-35.7,79.8-79.8,79.8s-79.8-35.7-79.8-79.8S211.9,118.1,256,118.1z M256,430.2
+		                           c-53.3,0-101-24.1-132.9-61.9c17.1-32.1,50.4-54.3,89.4-54.3c2.2,0,4.4,0.4,6.4,1c11.8,3.8,24.1,6.3,37.1,6.3s25.4-2.4,37.1-6.3
+		                           c2.1-0.6,4.3-1,6.4-1c38.9,0,72.3,22.1,89.4,54.3C357,406.1,309.3,430.2,256,430.2z"/>
+                        </g>
+                    </svg>
+        </a><span id="span-id" style="color: #fff; position: relative; top: 2.5px;"> | </span><a class="a-logout-views"
+                                                                                                 id="a-logout-views-id"
+                                                                                                 href="{% url 'logout' %}">LOGOUT</a>
+
+    </div>
+</div>
+
+
+    </div>
+    <div class="line-nav-black" id="line-nav-black-id">
+    </div>
+    <div id="line-div"
+         style="width: 100%; height: 2px; background-color: #668014; position: absolute; bottom: 0; display: none;"></div>
+</nav>
+<div>
+
+    <div>
+
+
+        <video class="video-v-one" autoplay loop muted="muted">
+            <source src="/static/main/video/v_one.mp4" type="video/mp4">
+            <source src="/static/main/video/v_one.ogv" type="video/ogg">
+            <source src="/static/main/video/v_one.webm" type="video/webm">
+
+        </video>
+
+        <div class="all-center-div">
+            <div>
+                <h1 class="text-on-video-main">An incredible rest in the forest
+                    <span id="text-on-video-main-two"><br>in any part of the world.</span></h1>
+                <button class="button-under-text-search">Search place
+                    <!--                <img style=" margin-left: 5px; height: 15px; width: 15px;" src="/static/main/images/right-arrow.svg">-->
+                </button>
+            </div>
+            <div class="index">
+                <div class="div-search-all">
+                    <form name="form1" id="form1" action="/action_page.php">
+                        <select name="subject" id="subject">
+                            <option value="" selected="selected">Select country</option>
+                        </select>
+                        <div class="number-adult-all">
+                            <button class="number-minus" type="button"
+                                    onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-
+                            </button>
+
+                            <input class="number" id="number-adult" type="number" min="1" max="20"
+                                   placeholder="1 adult">
+                            <button class="number-plus" type="button"
+                                    onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">
+                                +
+                            </button>
+
+                        </div>
+                        <div class="number-child-all">
+                            <button class="number-minus" type="button"
+                                    onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-
+                            </button>
+                            <input class="number" id="number-child" type="number" min="0" max="20"
+                                   placeholder="0 child">
+                            <button class="number-plus" type="button"
+                                    onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">
+                                +
+                            </button>
+
+                        </div>
+                        <input id="date" type="date">
+                        <input id="submit" type="submit" value="Submit">
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<div class="block-one" id="block-one-id">
+
+    <div class="content-block-one">
+        <div class="text-for-one">
+
+            <h3 id="text-one-h3">The best hotel for holidays</h3>
+            <p id="text-one-p">This is the gate of Mediterranean spirit.<br>
+                A new hospitality concept where inspiration and privacy come as the
+                luxury of staying by the luminous sea at the vibrant Santa Eulalia.</p>
+        </div>
+        <div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/static/main/images/room1.jpg" class="d-block w-100 h-75" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/main/images/room2.jpg" class="d-block w-100 h-75" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/main/images/room3.jpg" class="d-block w-100 h-75" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<div id="block-two" >
+    <div class="text-content-block-two">
+        <h3 class="block-two-text-h3">Magical memories,<br class="block-two-text-h3-two-br"> Bespoke experiences</h3>
+        <p class="block-two-text-p">Once you have travelled the voyage never ends. Adams & Butler will open a world of wonders and create magical
+            memories that will stay with you far beyond your travels.
+            Diverge from the typical tourist destinations in favour of unique, authentic experiences. Experiences
+            designed in the most inspiring surroundings that will be yours, and yours only.
+            Journeys that create memorable moments and Adams & Butler’s bespoke itineraries will make this happen.
+            The wonders of the world are within your reach.</p>
+
+    </div>
+    <div><img class="nav-img" style="" src="/static/main/images/jap_picture_block_two.jpg"></div>
+    <div >
+        <div class="mySlides fade"><img class="jap-img" src="/static/main/images/nat_picture_block_two_two.jpg"></div>
+        <div class="mySlides fade"><img class="jap-img" src="/static/main/images/nat_picture_block_two.jpg"></div>
+    </div>
+    <div><img class="nav-one-img" src="/static/main/images/nat_one_picture_block_two.jpg"></div>
+    <div class="content-block-two-text-two">
+        <h3 class="block-two-text-h3-two">Luxury Destinations</h3>
+        <p class="block-two-text-p">Let Adams & Butler open up a world of wonders and create magical memories that will stay with you far beyond
+            your travels. Whatever your travel preference may be, whether you are looking for a cultural city break, a
+            child friendly family holiday, unlimited adventure, a romantic getaway or just to escape and uncover, we are
+            here to create a seamless experience while handcrafting your bespoke journey.</p>
+
+    </div>
+
+</div>
+<div class="block-three" id="block-three-id">
+
+    <div class="text-content-block-three">
+        <h3 class="block-two-text-h3-two">You choose the country, where do you want to travel to.</h3>
+        <p class="block-two-text-p">At Maryculter House we go above and beyond to make sure the happiest day of your
+            life goes off without a hitch. What could be more romantic than saying ‘I do’ on the beautiful banks of the
+            River Dee? Of course, we’re well versed in the quirks of the Scottish climate. That’s why our indoor venues
+            are equally breath-taking. Brimming with historic character or contemporary elegance – the choice is yours.
+            At Maryculter House, we throw away the rule book and plan your day around you.</p>
+    </div>
+
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="gallery">
+            <ul class="images">
+                <li id="one" class="li-img-block">
+                    <a href="#">
+                        <img src="/static/main/images/japan-forest-min.jpg">
+                        <ul>
+                            <li class="li-img-block">
+                                <h2 class="li-two-text-h2">Japan</h2>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="li-img-block">
+                    <a href="#">
+                        <img src="/static/main/images/usa-forest-min.jpg">
+                        <ul>
+                            <li class="li-img-block">
+                                <h2 class="li-two-text-h2">The United States</h2>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="li-img-block">
+                    <a href="#">
+                        <img src="/static/main/images/france-forest-min.jpg">
+                        <ul>
+                            <li class="li-img-block">
+                                <h2 class="li-two-text-h2">France</h2>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="li-img-block">
+                    <a href="#">
+                        <img src="/static/main/images/switzerland-forest-min.jpg">
+                        <ul>
+                            <li id="four" class="li-img-block">
+                                <h2 class="li-two-text-h2">Switzerland</h2>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="li-img-block">
+                    <a href="#">
+                        <img src="/static/main/images/uk-forest-min.jpg">
+                        <ul>
+                            <li id="five" class="li-img-block">
+                                <h2 class="li-two-text-h2">The United Kingdom</h2>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="li-img-block">
+                    <a href="#">
+                        <img src="/static/main/images/canada-forest-min.jpg">
+                        <ul>
+                            <li id="six" class="li-img-block">
+                                <h2 class="li-two-text-h2">Canada</h2>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="li-img-block">
+                    <a href="#">
+                        <img src="/static/main/images/chine-forest-min.jpg">
+                        <ul>
+                            <li id="seven" class="li-img-block">
+                                <h2 class="li-two-text-h2">Chine</h2>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <button id="test" class="arrow next"><img
+                style="height: 40px; width: 40px; transform: rotate(180deg); margin-left: 3px;"
+                src="/static/main/images/left-arrow.svg"></button>
+        <button class="arrow prev"><img style="height: 40px; width: 40px; margin-left: 3px; "
+                                        src="/static/main/images/left-arrow.svg"></button>
+
+    </div>
+
+</div>
+
+<footer class="end-footer" style="position: relative; background-color: #222; height: 600px; width: 100%;">
+    <div class="div-end-all">
+        <div class="div-end-one">
+            <h4 class="text-h3-footer">TAILORED EXPERIENCES</h4>
+            <div style="height: 30px; width: 73px;  cursor: pointer;">
+                <a id="adventure" href="#" class="a-end">Adventure
+                    <div class="adventure"></div>
+                </a>
+            </div>
+
+            <div style="height: 30px; width: 82px;  cursor: pointer;">
+                <a id="celebration" href="#" class="a-end">Celebration
+                    <div id="a-end-line-div" class="celebration"></div>
+                </a>
+            </div>
+            <div style="height: 30px; width: 63px;  cursor: pointer;">
+
+                <a class="a-end">Culinary
+                    <div class="culinary"></div>
+                </a>
+            </div>
+            <div style="height: 30px; width: 51px;  cursor: pointer;">
+                <a class="a-end">Family
+                    <div class="family"></div>
+                </a>
+            </div>
+            <div style="height: 30px; width: 67px;  cursor: pointer;">
+                <a class="a-end">Ultraluxe
+                    <div class="ultraluxe"></div>
+                </a>
+            </div>
+            <div style="height: 30px; width: 60px;  cursor: pointer;">
+                <a class="a-end">Voyages
+                    <div class="voyages"></div>
+                </a>
+            </div>
+            <div style="height: 30px; width: 71px;  cursor: pointer;">
+                <a class="a-end">Speciality
+                    <div class="speciality"></div>
+                </a>
+            </div>
+
+        </div>
+        <div class="div-end-two">
+            <h4 class="text-h3-footer">DESTINATIONS</h4>
+            <div>
+                <div style="height: 30px; width: 51px;  cursor: pointer;">
+                    <a class="a-end">Japan
+                        <div class="japan"></div>
+                    </a>
+                </div>
+                <div style="height: 30px; width: 51px;  cursor: pointer;">
+                    <a class="a-end">USA
+                        <div class="USA"></div>
+                    </a>
+                </div>
+                <div style="height: 30px; width: 51px;  cursor: pointer;">
+                    <a class="a-end">France
+                        <div class="france"></div>
+                    </a>
+                </div>
+                <div style="height: 30px; width: 51px;  cursor: pointer;">
+                    <a class="a-end">Switzerland
+                        <div class="switzerland"></div>
+                    </a>
+                </div>
+                <div style="height: 30px; width: 51px;  cursor: pointer;">
+                    <a class="a-end">UK
+                        <div class="UK"></div>
+                    </a>
+                </div>
+                <div style="height: 30px; width: 51px;  cursor: pointer;">
+                    <a class="a-end">Canada
+                        <div class="canada"></div>
+                    </a>
+                </div>
+                <div style="height: 30px; width: 51px;  cursor: pointer;">
+                    <a class="a-end">Chine
+                        <div class="chine"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="div-end-three">
+
+
+            <h4 class="text-h3-footer">PRIVATE RENTALS</h4>
+            <div>
+                <div style="height: 30px; width: 51px;  cursor: pointer;">
+                    <a class="a-end">Castles
+                        <div class="a-end-line-div"></div>
+                    </a>
+                </div>
+                <div style="height: 30px; width: 51px;  cursor: pointer;">
+                    <a class="a-end">Estates
+                        <div class="a-end-line-div"></div>
+                    </a>
+                </div>
+                <div style="height: 30px; width: 51px;  cursor: pointer;">
+                    <a class="a-end">Forest
+                        <div class="a-end-line-div"></div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="div-end-four">
+            <h4 class="text-h3-footer">ABOUT US</h4>
+            <div>
+                <div style="height: 30px; width: 90px;  cursor: pointer;">
+                    <a class="a-end">Our Team
+                        <div class="a-end-line-div"></div>
+                    </a>
+                </div>
+                <div style="height: 30px; width: 100px; cursor: pointer;">
+                    <a class="a-end">Work with us
+                        <div class="a-end-line-div"></div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+</body>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+
+  slides[slideIndex-1].style.display = "block";
+
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="static/main/js/vide_2.js"></script>
+<!--<script src="static/main/js/screen_block_one.js"></script>-->
+<!--<script src="static/main/js/screen_block_two.js"></script>-->
+<script src="static/main/js/screen_block_three.js"></script>
+<!--<script src="static/main/js/footer.js"></script>-->
+
+
+
+
+</html>
+{% endif %}
+
+
+
+
+
+
+
+

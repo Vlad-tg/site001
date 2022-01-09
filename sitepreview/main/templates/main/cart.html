@@ -1,0 +1,52 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+{% if cart.products.count %}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Image</th>
+      <th scope="col">Price</th>
+      <th scope="col">Number</th>
+      <th scope="col">Total price</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for item in cart.products.all %}
+  <tr>
+      <th scope="row">{{ item.product.title }}</th>
+      <td class="w-25"><img src="{{ item.product.image.url }}" class="img-fluid"></td>
+      <td>{{ item.product.price_adult }} $</td>
+      <td>{{ item.product.price_children }} $</td>
+      <td>
+          <form action="{% url 'change_gty_cart' slug=item.product.slug %}" method="post">
+              {% csrf_token %}
+              <input type="number" class="from-control" name="qty" style="width: 70px" min="1" value="{{ item.qty }}">
+              <br>
+              <input type="submit" class="btn btn-primary" value="Change quantity">
+          </form>
+      </td>
+      <td>{{ item.total_price }} $</td>
+      <td>
+          <a href="{% url 'delete_from_cart' slug=item.product.slug %}">
+              <button style="height: 50px; width: 50px; background: green;" class="delete-from-cart">Delete from cart
+              </button>
+          </a>
+      </td>
+
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+</body>
+</html>

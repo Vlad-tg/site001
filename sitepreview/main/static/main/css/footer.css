@@ -1,0 +1,112 @@
+.div-end-all {
+margin-left: auto;
+margin-right: auto;
+padding-top: 100px;
+height: 500px;
+width: 1300px;
+display: flex;
+}
+.text-h3-footer {
+color: white;
+margin-bottom: 30px;
+ font-family: 'Palatino, URW Palladio L, serif';
+}
+.div-end-four, .div-end-three, .div-end-one, .div-end-two {
+display: inline-block;
+margin: 20px;
+
+
+}
+.a-end {
+display: block;
+color: white;
+text-decoration: none;
+cursor: pointer;
+ transition: clip 1.5s;
+ font-family: 'Palatino, URW Palladio L, serif';
+ font-size: 110%;
+
+}
+.a-end:hover {
+display: block !important;
+text-decoration: none;
+color: white;
+
+}
+
+
+.a-end:hover .adventure {
+ clip: rect(0px,73px,1px,0px);
+ transition: clip 1s;
+}
+.a-end:hover .celebration {
+ clip: rect(0px,82px,1px,0px);
+ transition: clip 1s;
+}
+.a-end:hover .culinary {
+ clip: rect(0px,63px,1px,0px);
+ transition: clip 1s;
+}
+.a-end:hover .family {
+ clip: rect(0px,51px,1px,0px);
+ transition: clip 1s;
+}
+.a-end:hover .ultraluxe {
+ clip: rect(0px,67px,1px,0px);
+ transition: clip 1s;
+}
+.a-end:hover .voyages {
+ clip: rect(0px,60px,1px,0px);
+ transition: clip 1s;
+}
+.a-end:hover .speciality {
+ clip: rect(0px,71px,1px,0px);
+ transition: clip 1s;
+}
+
+.adventure, .celebration, .culinary, .family, .ultraluxe, .voyages, .speciality {
+border-radius: 10px;
+ margin-top: 0;
+ margin-left: 0;
+ height: 1px;
+ position: absolute;
+ background: rgba(255,255,255,0.5);
+ transition: clip 0.8s;
+}
+
+.adventure {
+ width: 73px;
+ clip: rect(0px,0px,0px,72px);
+}
+.celebration {
+ width: 82px;
+ clip: rect(0px,0px,0px,82px);
+}
+.culinary {
+ width: 63px;
+ clip: rect(0px,0px,0px,63px);
+}
+.family {
+ width: 51px;
+ clip: rect(0px,0px,0px,51px);
+}
+.ultraluxe {
+ width: 67px;
+ clip: rect(0px,0px,0px,67px);
+}
+.voyages {
+ width: 60px;
+ clip: rect(0px,0px,0px,60px);
+}
+.speciality {
+ width: 71px;
+ clip: rect(0px,0px,0px,71px);
+}
+
+
+
+
+
+
+
+

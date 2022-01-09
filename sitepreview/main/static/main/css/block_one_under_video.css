@@ -1,0 +1,40 @@
+.block-one {
+background-color: #fff;
+height: 700px;
+width: 100%;
+z-index: -2;
+opacity: 0;
+}
+.content-block-one {
+padding-top: 120px;
+}
+.text-for-one {
+margin-top: 100px;
+float: right;
+margin-right: 60px;
+height: 200px;
+width: 600px;
+
+}
+#text-one-p {
+text-indent: 5%;
+font-size: 150%;
+font-family: 'Verdana, sans-serif';
+
+}
+#text-one-h3 {
+font-size: 250%;
+font-family: 'Verdana, sans-serif';
+text-align: center;
+color: #414F12;
+}
+#carouselExampleIndicators {
+position: absolute;
+width: 700px;
+z-index: 2;
+
+margin-left: 60px;
+}
+
+
+
