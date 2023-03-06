@@ -1,23 +1,23 @@
- /* этот код помечает картинки, для удобства разработки */
+
     let i = 1;
     for(let li of carousel.querySelectorAll('li')) {
     }
 
-    /* конфигурация */
-    let width = 400; // ширина картинки
-    let count = 1; // видимое количество изображений
+
+    let width = 400;
+    let count = 1;
 
     let list = carousel.querySelector('ul');
     let listElems = carousel.querySelectorAll('li');
 
-    let position = 0; // положение ленты прокрутки
+    let position = 0;
 
     carousel.querySelector('.prev').onclick = function() {
 
 
-      // сдвиг влево
+
       position += width * count;
-      // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+
       position = Math.min(position, 0)
       list.style.marginLeft = position + 'px';
     };
@@ -25,9 +25,9 @@
     carousel.querySelector('.next').onclick = function() {
 
 
-      // сдвиг вправо
+
       position -= width * count;
-      // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+
       position = Math.max(position,  -width * 4);
 
       list.style.marginLeft = position + 'px';

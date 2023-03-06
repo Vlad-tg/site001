@@ -31,6 +31,7 @@ class Product(models.Model):
         (INACTIVE, 'Inactive')
     )
     title = models.CharField(verbose_name='Name', max_length=250)
+    title_name = models.CharField(verbose_name='Name ppp', max_length=250, blank=True)
     slug = models.SlugField(unique=True)
     category = models.ForeignKey('Category', verbose_name='Category', on_delete=models.CASCADE)
     image = models.ImageField(verbose_name='Imagine')
